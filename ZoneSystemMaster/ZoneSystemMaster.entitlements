@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- App Groups for Cloud Sync -->
+    <key>com.apple.security.application-groups</key>
+    <array>
+        <string>group.com.zonesystemmaster.shared</string>
+    </array>
+    
+    <!-- iCloud -->
+    <key>com.apple.developer.icloud-container-identifiers</key>
+    <array>
+        <string>iCloud.com.zonesystemmaster.app</string>
+    </array>
+    <key>com.apple.developer.icloud-services</key>
+    <array>
+        <string>CloudKit</string>
+    </array>
+    <key>com.apple.developer.ubiquity-kvstore-identifier</key>
+    <string>$(TeamIdentifierPrefix)$(CFBundleIdentifier)</string>
+    
+    <!-- Bluetooth -->
+    <key>com.apple.developer.bluetooth-peripheral</key>
+    <true/>
+    <key>com.apple.developer.bluetooth-central</key>
+    <true/>
+    
+    <!-- In-App Purchase -->
+    <key>com.apple.developer.in-app-purchase</key>
+    <true/>
+    
+    <!-- Apple Intelligence -->
+    <key>com.apple.developer.apple-identity</key>
+    <true/>
+    
+    <!-- Push Notifications -->
+    <key>aps-environment</key>
+    <string>development</string>
+    
+    <!-- Background Modes -->
+    <key>com.apple.developer.background-processing</key>
+    <true/>
+    
+    <!-- Network -->
+    <key>com.apple.developer.networking.networkextension</key>
+    <array>
+        <string>app-proxy-provider</string>
+    </array>
+    
+    <!-- Keychain -->
+    <key>keychain-access-groups</key>
+    <array>
+        <string>$(AppIdentifierPrefix)com.zonesystemmaster.app</string>
+    </array>
+    
+    <!-- Data Protection -->
+    <key>com.apple.developer.default-data-protection</key>
+    <string>NSFileProtectionComplete</string>
+</dict>
+</plist>

@@ -1,0 +1,19 @@
+{
+  "": {
+    "swift-dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterTests.build/master.swiftdeps"
+  },
+  "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Tests/ZoneSystemMasterTests.swift": {
+    "dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterTests.build/ZoneSystemMasterTests.d",
+    "object": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterTests.build/ZoneSystemMasterTests.swift.o",
+    "swiftmodule": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterTests.build/ZoneSystemMasterTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterTests.build/ZoneSystemMasterTests.swiftdeps",
+    "diagnostics": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterTests.build/ZoneSystemMasterTests.dia"
+  },
+  "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Tests/ZoneSystemTests.swift": {
+    "dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterTests.build/ZoneSystemTests.d",
+    "object": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterTests.build/ZoneSystemTests.swift.o",
+    "swiftmodule": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterTests.build/ZoneSystemTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterTests.build/ZoneSystemTests.swiftdeps",
+    "diagnostics": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterTests.build/ZoneSystemTests.dia"
+  }
+}

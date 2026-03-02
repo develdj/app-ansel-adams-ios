@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Autorizzazione Bluetooth Always - richiesta per iOS 13+ -->
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Questa app utilizza il Bluetooth per connettersi alle stampanti Instax e stampare le tue foto. L'accesso al Bluetooth è necessario per comunicare con la stampante.</string>
+    
+    <!-- Autorizzazione Bluetooth (deprecato in iOS 13, ma necessario per versioni precedenti) -->
+    <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>Questa app utilizza il Bluetooth per connettersi alle stampanti Instax e stampare le tue foto.</string>
+    
+    <!-- Background modes per BLE -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>bluetooth-central</string>
+    </array>
+    
+    <!-- Supporto iPhone e iPad -->
+    <key>UIDeviceFamily</key>
+    <array>
+        <integer>1</integer>
+        <integer>2</integer>
+    </array>
+    
+    <!-- Orientamenti supportati -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    
+    <!-- Orientamenti iPad -->
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+</dict>
+</plist>

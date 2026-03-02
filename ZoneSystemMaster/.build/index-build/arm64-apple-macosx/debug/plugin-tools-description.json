@@ -1,0 +1,722 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterPackageTests.xctest/Contents/MacOS/ZoneSystemMasterPackageTests",
+      "packagePath" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster",
+      "productName" : "ZoneSystemMasterPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.ZoneSystemMaster-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/sources",
+      "importPath" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/App/ZoneSystemMasterApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Models/SwiftDataModels.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/AnalogArchiveView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/AnselChatView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/DarkroomTimerView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/ExposureMeterView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/SettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Main/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "ZoneSystemMaster",
+      "moduleOutputPath" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/Modules/ZoneSystemMaster.swiftmodule",
+      "objects" : [
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/ZoneSystemMasterApp.swift.o",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/SwiftDataModels.swift.o",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/AnalogArchiveView.swift.o",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/AnselChatView.swift.o",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/DarkroomTimerView.swift.o",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/ExposureMeterView.swift.o",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/SettingsView.swift.o",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/ContentView.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/include/ZoneSystemMaster-Swift.h",
+        "-swift-version",
+        "5",
+        "-enable-experimental-feature",
+        "StrictConcurrency",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "zonesystemmaster"
+      ],
+      "outputFileMapPath" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/Modules/ZoneSystemMaster.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/App/ZoneSystemMasterApp.swift",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Models/SwiftDataModels.swift",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/AnalogArchiveView.swift",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/AnselChatView.swift",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/DarkroomTimerView.swift",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/ExposureMeterView.swift",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/SettingsView.swift",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Main/ContentView.swift"
+      ],
+      "tempsPath" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.ZoneSystemMasterPackageTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterPackageTests.build/sources",
+      "importPath" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/Modules/ZoneSystemMasterTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "ZoneSystemMasterPackageTests",
+      "moduleOutputPath" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/Modules/ZoneSystemMasterPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterPackageTests.build/include/ZoneSystemMasterPackageTests-Swift.h",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "zonesystemmaster"
+      ],
+      "outputFileMapPath" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/Modules/ZoneSystemMasterPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.ZoneSystemMasterTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterTests.build/sources",
+      "importPath" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Tests/ZoneSystemMasterTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Tests/ZoneSystemTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/Modules/ZoneSystemMaster.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "ZoneSystemMasterTests",
+      "moduleOutputPath" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/Modules/ZoneSystemMasterTests.swiftmodule",
+      "objects" : [
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterTests.build/ZoneSystemMasterTests.swift.o",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterTests.build/ZoneSystemTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "5",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "zonesystemmaster"
+      ],
+      "outputFileMapPath" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/Modules/ZoneSystemMasterTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Tests/ZoneSystemMasterTests.swift",
+        "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Tests/ZoneSystemTests.swift"
+      ],
+      "tempsPath" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "ZoneSystemMaster" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "ZoneSystemMaster",
+      "-package-name",
+      "zonesystemmaster",
+      "-c",
+      "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/App/ZoneSystemMasterApp.swift",
+      "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Models/SwiftDataModels.swift",
+      "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/AnalogArchiveView.swift",
+      "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/AnselChatView.swift",
+      "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/DarkroomTimerView.swift",
+      "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/ExposureMeterView.swift",
+      "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/SettingsView.swift",
+      "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Main/ContentView.swift",
+      "-I",
+      "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/include/ZoneSystemMaster-Swift.h",
+      "-swift-version",
+      "5",
+      "-enable-experimental-feature",
+      "StrictConcurrency",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "zonesystemmaster",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "ZoneSystemMasterPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "ZoneSystemMasterPackageTests",
+      "-package-name",
+      "zonesystemmaster",
+      "-c",
+      "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterPackageTests.build/include/ZoneSystemMasterPackageTests-Swift.h",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "zonesystemmaster",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "ZoneSystemMasterTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "ZoneSystemMasterTests",
+      "-package-name",
+      "zonesystemmaster",
+      "-c",
+      "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Tests/ZoneSystemMasterTests.swift",
+      "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Tests/ZoneSystemTests.swift",
+      "-I",
+      "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "5",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "zonesystemmaster",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "ZoneSystemMaster" : [
+
+    ],
+    "ZoneSystemMasterPackageTests" : [
+      "ZoneSystemMasterTests",
+      "ZoneSystemMaster"
+    ],
+    "ZoneSystemMasterTests" : [
+      "ZoneSystemMaster"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/App/ZoneSystemMasterApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Models/SwiftDataModels.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/AnalogArchiveView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/AnselChatView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/DarkroomTimerView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/ExposureMeterView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/SettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Main/ContentView.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/sources"
+    },
+    "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterPackageTests.build/sources"
+    },
+    "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Tests/ZoneSystemMasterTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Tests/ZoneSystemTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMasterTests.build/sources"
+    },
+    "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

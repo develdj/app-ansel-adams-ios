@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- App Information -->
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+    <key>CFBundleDisplayName</key>
+    <string>Zone System Master</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    
+    <!-- Device Capabilities -->
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>arm64</string>
+        <string>camera</string>
+        <string>bluetooth-le</string>
+    </array>
+    
+    <!-- Supported Interface Orientations -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    
+    <!-- Scene Configuration -->
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <false/>
+        <key>UISceneConfigurations</key>
+        <dict>
+            <key>UIWindowSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneConfigurationName</key>
+                    <string>Default Configuration</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+    
+    <!-- Privacy Permissions -->
+    <key>NSCameraUsageDescription</key>
+    <string>Zone System Master needs access to your camera to measure exposure using the built-in light meter and to analyze images for zone placement.</string>
+    
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Zone System Master needs access to your photo library to save analyzed images and to import photos for zone mapping and AI critique.</string>
+    
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>Zone System Master needs permission to save edited photos and zone maps to your photo library.</string>
+    
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Zone System Master uses your location to tag exposures in your film archive, helping you remember where each photograph was taken.</string>
+    
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Zone System Master uses Bluetooth to connect to Fujifilm Instax printers for direct photo printing.</string>
+    
+    <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>Zone System Master needs Bluetooth access to discover and connect to Instax printers.</string>
+    
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Zone System Master may use the microphone for voice commands when interacting with the AI assistant.</string>
+    
+    <!-- Background Modes -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>bluetooth-central</string>
+        <string>processing</string>
+    </array>
+    
+    <!-- App Transport Security -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <false/>
+    </dict>
+    
+    <!-- User Interface Style -->
+    <key>UIUserInterfaceStyle</key>
+    <string>Automatic</string>
+    
+    <!-- Launch Screen -->
+    <key>UILaunchScreen</key>
+    <dict>
+        <key>UILaunchName</key>
+        <string>LaunchScreen</string>
+    </dict>
+    
+    <!-- Appearance -->
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <false/>
+    
+    <!-- StoreKit Configuration -->
+    <key>SKStoreProductParameterITunesItemIdentifier</key>
+    <string>com.zonesystemmaster.pro</string>
+    
+    <!-- Apple Intelligence -->
+    <key>NSAppleIntelligenceUsageDescription</key>
+    <string>Zone System Master uses Apple Intelligence to provide AI-powered image analysis, zone critique, and to power the Ansel Adams chatbot experience.</string>
+    
+    <!-- Machine Learning -->
+    <key>NSMachineLearningModelUsageDescription</key>
+    <string>Zone System Master uses on-device machine learning for image analysis and zone mapping.</string>
+    
+    <!-- Metal -->
+    <key>MetalCaptureEnabled</key>
+    <false/>
+    
+    <!-- Document Types -->
+    <key>CFBundleDocumentTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeName</key>
+            <string>Zone System Archive</string>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>LSHandlerRank</key>
+            <string>Owner</string>
+            <key>LSItemContentTypes</key>
+            <array>
+                <string>com.zonesystemmaster.archive</string>
+            </array>
+        </dict>
+    </array>
+    
+    <!-- Exported UTIs -->
+    <key>UTExportedTypeDeclarations</key>
+    <array>
+        <dict>
+            <key>UTTypeIdentifier</key>
+            <string>com.zonesystemmaster.archive</string>
+            <key>UTTypeDescription</key>
+            <string>Zone System Archive</string>
+            <key>UTTypeConformsTo</key>
+            <array>
+                <string>public.data</string>
+                <string>public.content</string>
+            </array>
+            <key>UTTypeTagSpecification</key>
+            <dict>
+                <key>public.filename-extension</key>
+                <array>
+                    <string>zsm</string>
+                </array>
+                <key>public.mime-type</key>
+                <array>
+                    <string>application/x-zonesystem-archive</string>
+                </array>
+            </dict>
+        </dict>
+    </array>
+    
+    <!-- Imported UTIs -->
+    <key>UTImportedTypeDeclarations</key>
+    <array>
+        <dict>
+            <key>UTTypeIdentifier</key>
+            <string>public.image</string>
+            <key>UTTypeRole</key>
+            <string>Viewer</string>
+        </dict>
+        <dict>
+            <key>UTTypeIdentifier</key>
+            <string>public.data</string>
+            <key>UTTypeRole</key>
+            <string>Editor</string>
+        </dict>
+    </array>
+</dict>
+</plist>

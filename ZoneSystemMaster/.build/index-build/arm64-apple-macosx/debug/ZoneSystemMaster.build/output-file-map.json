@@ -1,0 +1,61 @@
+{
+  "": {
+    "swift-dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/master.swiftdeps"
+  },
+  "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/App/ZoneSystemMasterApp.swift": {
+    "dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/ZoneSystemMasterApp.d",
+    "object": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/ZoneSystemMasterApp.swift.o",
+    "swiftmodule": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/ZoneSystemMasterApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/ZoneSystemMasterApp.swiftdeps",
+    "diagnostics": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/ZoneSystemMasterApp.dia"
+  },
+  "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Models/SwiftDataModels.swift": {
+    "dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/SwiftDataModels.d",
+    "object": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/SwiftDataModels.swift.o",
+    "swiftmodule": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/SwiftDataModels~partial.swiftmodule",
+    "swift-dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/SwiftDataModels.swiftdeps",
+    "diagnostics": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/SwiftDataModels.dia"
+  },
+  "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/AnalogArchiveView.swift": {
+    "dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/AnalogArchiveView.d",
+    "object": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/AnalogArchiveView.swift.o",
+    "swiftmodule": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/AnalogArchiveView~partial.swiftmodule",
+    "swift-dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/AnalogArchiveView.swiftdeps",
+    "diagnostics": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/AnalogArchiveView.dia"
+  },
+  "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/AnselChatView.swift": {
+    "dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/AnselChatView.d",
+    "object": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/AnselChatView.swift.o",
+    "swiftmodule": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/AnselChatView~partial.swiftmodule",
+    "swift-dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/AnselChatView.swiftdeps",
+    "diagnostics": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/AnselChatView.dia"
+  },
+  "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/DarkroomTimerView.swift": {
+    "dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/DarkroomTimerView.d",
+    "object": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/DarkroomTimerView.swift.o",
+    "swiftmodule": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/DarkroomTimerView~partial.swiftmodule",
+    "swift-dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/DarkroomTimerView.swiftdeps",
+    "diagnostics": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/DarkroomTimerView.dia"
+  },
+  "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/ExposureMeterView.swift": {
+    "dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/ExposureMeterView.d",
+    "object": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/ExposureMeterView.swift.o",
+    "swiftmodule": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/ExposureMeterView~partial.swiftmodule",
+    "swift-dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/ExposureMeterView.swiftdeps",
+    "diagnostics": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/ExposureMeterView.dia"
+  },
+  "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Features/SettingsView.swift": {
+    "dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/SettingsView.d",
+    "object": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/SettingsView.swift.o",
+    "swiftmodule": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/SettingsView~partial.swiftmodule",
+    "swift-dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/SettingsView.swiftdeps",
+    "diagnostics": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/SettingsView.dia"
+  },
+  "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/Sources/ZoneSystemMaster/Views/Main/ContentView.swift": {
+    "dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/ContentView.d",
+    "object": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/ContentView.swift.o",
+    "swiftmodule": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/ContentView.swiftdeps",
+    "diagnostics": "/Users/dev/Downloads/App Ansel Adams iOS/ZoneSystemMaster/.build/index-build/arm64-apple-macosx/debug/ZoneSystemMaster.build/ContentView.dia"
+  }
+}
