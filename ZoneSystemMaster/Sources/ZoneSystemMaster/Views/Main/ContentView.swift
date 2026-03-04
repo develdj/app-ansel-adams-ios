@@ -6,23 +6,57 @@ import ZoneSystemUI
 
 @MainActor
 struct ContentView: View {
-    
+
     @Environment(AppState.self) private var appState
     @Environment(DependencyContainer.self) private var container
-    
+    @State private var showSplash = true
+    @State private var showMainContent = false
+
     var body: some View {
-        Group {
-            if appState.isLoading {
-                SplashScreen()
-            } else if !appState.hasCompletedOnboarding {
-                OnboardingView()
-            } else {
-                MainTabView()
+        ZStack {
+            // Main content (only shown after splash)
+            if showMainContent {
+                Group {
+                    if appState.hasCompletedOnboarding {
+                        MainTabView()
+                    } else {
+                        OnboardingView()
+                    }
+                }
+                .preferredColorScheme(colorScheme)
+                .transition(.opacity)
+            }
+
+            // Splash screen overlay (always shows first)
+            if showSplash {
+                EnhancedSplashScreen {
+                    dismissSplash()
+                }
+                .zIndex(1)
             }
         }
-        .preferredColorScheme(colorScheme)
+        .onAppear {
+            // Fallback: ensure splash dismisses after 3 seconds
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                if showSplash {
+                    dismissSplash()
+                }
+            }
+        }
     }
-    
+
+    private func dismissSplash() {
+        withAnimation(.easeOut(duration: 0.3)) {
+            showSplash = false
+        }
+        // Show main content after splash starts fading out
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+            withAnimation(.easeOut(duration: 0.3)) {
+                showMainContent = true
+            }
+        }
+    }
+
     private var colorScheme: ColorScheme? {
         switch appState.currentTheme {
         case .light: return .light
@@ -98,17 +132,18 @@ struct SplashScreen: View {
 
 @MainActor
 struct MainTabView: View {
-    
+
     @State private var selectedTab: Tab = .meter
     @Environment(DependencyContainer.self) private var container
-    
+    @State private var navigationManager = ChatNavigationManager.shared
+
     enum Tab: String, CaseIterable {
         case chat = "Chat"
         case meter = "Meter"
         case timer = "Timer"
         case archive = "Archive"
         case settings = "Settings"
-        
+
         var icon: String {
             switch self {
             case .chat: return "bubble.left.fill"
@@ -117,6 +152,17 @@ struct MainTabView: View {
             case .archive: return "film.stack.fill"
             case .settings: return "gearshape.fill"
             }
+        }
+    }
+
+    // Convert AppDestination to Tab
+    private func tab(for destination: AppDestination) -> Tab? {
+        switch destination {
+        case .chat: return .chat
+        case .exposureMeter: return .meter
+        case .darkroomTimer: return .timer
+        case .filmArchive: return .archive
+        case .photoEditor: return .archive // Editor is under Archive tab for now
         }
     }
     
@@ -153,6 +199,18 @@ struct MainTabView: View {
                 .tag(Tab.settings)
         }
         .tint(LiquidGlassTheme.Colors.primary)
+        .onChange(of: navigationManager.selectedDestination) { _, destination in
+            if let destination = destination,
+               let tab = tab(for: destination) {
+                withAnimation(.easeInOut(duration: 0.3)) {
+                    selectedTab = tab
+                }
+                // Clear the destination after navigating
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    navigationManager.selectedDestination = nil
+                }
+            }
+        }
     }
 }
 
@@ -160,60 +218,91 @@ struct MainTabView: View {
 
 @MainActor
 struct OnboardingView: View {
-    
+
     @Environment(AppState.self) private var appState
     @State private var currentPage = 0
-    
+    @State private var isDismissed = false
+
     private let pages = [
         OnboardingPage(
             title: "Welcome to Zone System Master",
-            description: "The definitive digital companion for Ansel Adams' Zone System. Master exposure, development, and printing with precision.",
+            description: "The definitive digital companion for mastering Ansel Adams' Zone System. Precision exposure, development, and printing tools in your pocket.",
             image: "camera.aperture",
             color: .blue
         ),
         OnboardingPage(
             title: "Scientific Exposure Meter",
-            description: "Measure light and place tones exactly where you want them. Visualize the 11 zones from pure black to pure white.",
+            description: "Measure light and place tones exactly where you want them. Visualize the 11 zones from pure black to pure white with real-time feedback.",
             image: "camera.metering.center.weighted",
             color: .orange
         ),
         OnboardingPage(
             title: "Darkroom Timer",
-            description: "Precise multi-phase timing for development, stop bath, fixing, and washing. Never miss a critical moment.",
+            description: "Precise multi-phase timing for development, stop bath, fixing, and washing. Temperature-compensated timing ensures perfect results every time.",
             image: "timer",
             color: .green
         ),
         OnboardingPage(
-            title: "Chat with Ansel",
-            description: "Ask questions and receive guidance powered by Apple Intelligence. Learn from the master himself.",
+            title: "Chat with PAI",
+            description: "Ask questions and receive guidance powered by Apple Intelligence. Your Photography AI assistant helps you master the Zone System and navigate every feature.",
             image: "bubble.left.fill",
             color: .purple
         ),
         OnboardingPage(
             title: "Analog Archive",
-            description: "Track every roll, every frame, every exposure. Build a complete record of your photographic journey.",
+            description: "Track every roll, every frame, every exposure. Build a complete record of your photographic journey and learn from your shooting patterns.",
             image: "film.stack.fill",
             color: .pink
         )
     ]
-    
+
     var body: some View {
         ZStack {
-            LiquidGlassTheme.Colors.background
-                .ignoresSafeArea()
-            
-            VStack {
+            // Animated gradient background
+            LinearGradient(
+                colors: [
+                    pages[currentPage].color.opacity(0.1),
+                    LiquidGlassTheme.Colors.background,
+                    pages[currentPage].color.opacity(0.05)
+                ],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+            .ignoresSafeArea()
+            .animation(.easeInOut(duration: 0.5), value: currentPage)
+
+            VStack(spacing: 0) {
+                // Skip button
+                HStack {
+                    Spacer()
+                    Button {
+                        withAnimation(.easeInOut(duration: 0.3)) {
+                            appState.completeOnboarding()
+                            isDismissed = true
+                        }
+                    } label: {
+                        Text("Skip")
+                            .font(LiquidGlassTheme.Typography.body)
+                            .foregroundColor(.secondary)
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 10)
+                    }
+                }
+                .padding(.horizontal)
+                .padding(.top)
+
+                Spacer()
+
                 // Page indicator
                 HStack(spacing: LiquidGlassTheme.Spacing.xs) {
                     ForEach(0..<pages.count, id: \.self) { index in
                         Capsule()
-                            .fill(currentPage == index ? LiquidGlassTheme.Colors.primary : LiquidGlassTheme.Colors.glassThick)
-                            .frame(width: currentPage == index ? 24 : 8, height: 8)
+                            .fill(currentPage == index ? pages[currentPage].color : LiquidGlassTheme.Colors.glassThick)
+                            .frame(width: currentPage == index ? 28 : 8, height: 8)
                             .animation(LiquidGlassTheme.Animation.spring, value: currentPage)
                     }
                 }
-                .padding(.top)
-                
+
                 // Page content
                 TabView(selection: $currentPage) {
                     ForEach(0..<pages.count, id: \.self) { index in
@@ -222,34 +311,78 @@ struct OnboardingView: View {
                     }
                 }
                 .tabViewStyle(.page(indexDisplayMode: .never))
-                
+
+                Spacer()
+
                 // Navigation buttons
-                HStack {
+                HStack(spacing: LiquidGlassTheme.Spacing.md) {
                     if currentPage > 0 {
-                        Button("Back") {
-                            withAnimation {
+                        Button {
+                            withAnimation(.easeInOut) {
                                 currentPage -= 1
                             }
+                        } label: {
+                            HStack(spacing: 8) {
+                                Image(systemName: "chevron.left")
+                                Text("Back")
+                            }
+                            .font(LiquidGlassTheme.Typography.body)
+                            .foregroundColor(.primary)
+                            .padding(.horizontal, 24)
+                            .padding(.vertical, 14)
+                            .background(LiquidGlassTheme.Colors.glassRegular)
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
                         }
-                        .buttonStyle(.bordered)
                     }
-                    
+
                     Spacer()
-                    
-                    Button(currentPage == pages.count - 1 ? "Get Started" : "Next") {
+
+                    Button {
                         if currentPage == pages.count - 1 {
-                            appState.completeOnboarding()
+                            withAnimation(.easeInOut(duration: 0.3)) {
+                                appState.completeOnboarding()
+                                isDismissed = true
+                            }
                         } else {
-                            withAnimation {
+                            withAnimation(.easeInOut) {
                                 currentPage += 1
                             }
                         }
+                    } label: {
+                        HStack(spacing: 8) {
+                            Text(currentPage == pages.count - 1 ? "Get Started" : "Next")
+                            if currentPage < pages.count - 1 {
+                                Image(systemName: "chevron.right")
+                            } else {
+                                Image(systemName: "checkmark")
+                            }
+                        }
+                        .font(LiquidGlassTheme.Typography.body.weight(.semibold))
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 28)
+                        .padding(.vertical, 14)
+                        .background(pages[currentPage].color)
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                        .shadow(color: pages[currentPage].color.opacity(0.3), radius: 8, y: 4)
                     }
-                    .buttonStyle(.borderedProminent)
                 }
-                .padding()
+                .padding(.horizontal, 24)
+                .padding(.bottom, 40)
             }
         }
+        .opacity(isDismissed ? 0 : 1)
+        .gesture(
+            DragGesture()
+                .onEnded { value in
+                    if value.translation.height < -100 {
+                        // Swipe up to dismiss
+                        withAnimation(.easeInOut(duration: 0.3)) {
+                            appState.completeOnboarding()
+                            isDismissed = true
+                        }
+                    }
+                }
+        )
     }
 }
 
@@ -299,8 +432,10 @@ struct OnboardingPageView: View {
 
 // MARK: - Preview
 
-#Preview("Splash Screen") {
-    SplashScreen()
+#Preview("Enhanced Splash Screen") {
+    EnhancedSplashScreen {
+        print("Splash dismissed in preview")
+    }
 }
 
 #Preview("Main Tab View") {
